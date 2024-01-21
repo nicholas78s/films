@@ -10,7 +10,7 @@ export const Stars : React.FC<StarType> = ({count}) => {
     <ul className="card-body-stars u-clearfix">
       <li>
           {
-            Array.apply(null, Array(count)).map(() => {
+            Array.apply(null, Array(Number(count))).map(() => {
               return (<Star />);
             })
           }
