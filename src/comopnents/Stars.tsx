@@ -7,7 +7,6 @@ export type StarType = {
 export const Stars : React.FC<StarType> = ({count}) => {
   return (
     (Number(count) > 0 && Number(count) <= 5) ?
-    
     <ul className="card-body-stars u-clearfix">
       <li>
           {
